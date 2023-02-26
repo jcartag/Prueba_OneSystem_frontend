@@ -1,0 +1,46 @@
+<h1 mat-dialog-title>Agregar Alumno</h1>
+<form [formGroup]="usuarioForm" (ngSubmit)="guardar(usuarioForm.value)">
+    <div mat-dialog-content>
+        <mat-form-field>
+            <mat-label>Nombre completo del alumno</mat-label>
+            <input matInput formControlName="nombre_alumno">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Identificacion</mat-label>
+            <input matInput formControlName="identificacion">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Numero telefonico</mat-label>
+            <input matInput formControlName="telefono">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Direccion residencia</mat-label>
+            <input matInput formControlName="direccion_residencia">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Género</mat-label>
+            <input matInput formControlName="genero">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Numero de la matricula</mat-label>
+            <input matInput formControlName="numero_matricula">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Programa</mat-label>
+            <input matInput formControlName="programa">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Nota promedio</mat-label>
+            <input matInput formControlName="nota_promedio">
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
+        <button type="submit" mat-raised-button color="primary">Guardar</button>
+    </div>
+</form>
+

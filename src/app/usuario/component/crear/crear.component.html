@@ -1,0 +1,45 @@
+<h1 mat-dialog-title>Agregar Profesor</h1>
+<form [formGroup]="profesorForm" (ngSubmit)="guardar(profesorForm.value)">
+    <div mat-dialog-content>
+        <mat-form-field>
+            <mat-label>Nombre completo del profesor</mat-label>
+            <input matInput formControlName="nombre_alumno">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Identificación</mat-label>
+            <input matInput formControlName="identificacion">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Numero telefonico</mat-label>
+            <input matInput formControlName="telefono">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Direccion residencia</mat-label>
+            <input matInput formControlName="direccion_residencia">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Género</mat-label>
+            <input matInput formControlName="genero">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Salario</mat-label>
+            <input matInput formControlName="salario">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Dependencia</mat-label>
+            <input matInput formControlName="dependencia">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Materia</mat-label>
+            <input matInput formControlName="materia">
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
+        <button type="submit" mat-raised-button color="primary">Guardar</button>
+    </div>
+</form>
